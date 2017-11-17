@@ -1,0 +1,6 @@
+<h1>Send msg to telegram</h1>
+
+<%= form_tag("/msg/send_msg", method: "post") do %>
+  <%= text_field_tag(:msg)%>
+  <%= submit_tag("send")%>
+<% end %>
